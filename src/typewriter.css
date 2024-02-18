@@ -1,0 +1,10 @@
+.cursor {
+  visibility: visible;
+  animation: blink-animation 1s step-end infinite;
+}
+
+@keyframes blink-animation {
+  50% {
+    visibility: hidden;
+  }
+}
