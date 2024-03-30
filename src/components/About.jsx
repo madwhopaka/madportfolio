@@ -8,8 +8,8 @@ const About = () => {
     }, [])
 
     return (
-        <div className="h-screen text-center relative flex flex-col justify-center md:justify-evenly px-10 mx-auto max-w-7xl items-center md:text-left md:flex-row overflow-x-hidden">
-            <h3 className="absolute top-20 md:top-24 ml-8 md:ml-8 tracking-[18px] text-xl md:text-2xl text-gray-500 uppercase">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="h-screen text-center relative flex flex-col justify-center md:justify-evenly px-10 mx-auto max-w-7xl items-center md:text-left md:flex-row overflow-x-hidden">
+            <h3 className="absolute top-24 ml-8 md:ml-8 tracking-[18px] text-xl md:text-2xl text-gray-500 uppercase">
                 About{" "}
             </h3>
             <motion.img
@@ -19,7 +19,7 @@ const About = () => {
                 className="my-5 md:my-0 w-40 h-40 sm:w-60 sm:h-60 rounded-full object-cover md:rounded-lg md:w-64 md:h-64 lg:h-[300px] lg:w-[200px] justify-center items-center"
                 src={img2}
             />
-            <div className=" space-y-6 md:space-y-10 px-0 md:px-10">
+            <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.7 }} className=" space-y-6 md:space-y-10 px-0 md:px-10">
                 <h4 className="text-xl mt-2 md:my-3 font-semibold">
                     Here is a{" "}
                     <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
@@ -35,8 +35,8 @@ const About = () => {
                     blockbuster, 🍿 popcorn in hand, critiquing CGI like a seasoned film
                     critic."
                 </p>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 
