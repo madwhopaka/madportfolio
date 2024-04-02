@@ -13,17 +13,17 @@ const Header = () => {
             >
                 {/* Social Icons  */}
                 <SocialIcon
-                    url="https://youtube.com/sonnysangha"
+                    url="https://leetcode.com/madkong/"
                     fgColor="gray"
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://youtube.com/sonnysangha"
+                    url="https://github.com/madwhopaka"
                     fgColor="gray"
                     bgColor="transparent"
                 />
                 <SocialIcon
-                    url="https://youtube.com/sonnysangha"
+                    url="https://www.linkedin.com/in/madhu-paka-1b69ba220"
                     fgColor="gray"
                     bgColor="transparent"
                 />
